@@ -13,3 +13,12 @@ public class TestEstacion {
         assertEquals("id: 1 \ndireccion: Manacor \nanclajes: 6", estacion.toString());
     }
 }
+
+    @Test
+    public void anclajesLibresTest() {
+    Estacion estacion = new Estacion(1, "Manacor", 6);
+    assertEquals(6, estacion.anclajesLibres());
+
+    estacion = new Estacion(1, "Manacor", 0);
+    assertEquals(0, estacion.anclajesLibres());
+}

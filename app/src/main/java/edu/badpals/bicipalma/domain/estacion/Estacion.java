@@ -4,12 +4,14 @@ public class Estacion {
 
     private final Integer id;
     private final String direccion;
+    private final Anclajes anclajes;
 
 
     Estacion (Integer id, String direccion, int numeroAnclajes) {
 
         this.id = id;
         this.direccion = direccion;
+        this.anclajes = new Anclajes(numeroAnclajes);
     }
 
     private Integer getId() {
@@ -20,8 +22,12 @@ public class Estacion {
         return this.direccion;
     }
 
-    public String toString() {
-
+    private int numeroAnclajes() {
+        return this.anclajes.numAnclajes();
     }
 
+    public String toString() {
+        return "id: "+this.getId()+" \ndireccion: "+this.getDireccion()+" \nanclajes: "+this.numeroAnclajes();
+    }
+ // "id: 1 \ndireccion: Manacor \nanclajes: 6"
 }
