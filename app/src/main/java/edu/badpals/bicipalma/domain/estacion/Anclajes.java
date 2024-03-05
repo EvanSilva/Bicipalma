@@ -8,6 +8,7 @@ public class Anclajes {
 
     Anclajes (int numeroAnclajes) {
         this.anclajes = new Anclaje[numeroAnclajes];
+        crearAnclajes();
     }
 
     private void crearAnclajes() {
@@ -18,6 +19,10 @@ public class Anclajes {
 
     Integer numAnclajes () {
         return this.anclajes.length;
+    }
+
+    Anclaje[] anclajes ()  {
+        return this.anclajes;
     }
 
     @Override

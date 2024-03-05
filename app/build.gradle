@@ -41,15 +41,16 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'edu.badpals.bicipalma.app'
+    mainClass = 'edu.badpals.bicipalma.appalma.BiciPalma'
 }
 
 jar {
     manifest {
-        attributes 'Main-Class' : 'appalma.BiciPalma',
+        attributes 'Main-Class' : 'edu.badpals.bicipalma.appalma.BiciPalma',
                 'Package-Title' : 'Bicipalma',
                 'Package-Version': '1.0',
                 'Package-Vendor' : 'davidg@cifpfbmol.eu',
                 'Specification-Title' : 'Examen BiciPalma'
     }
 }
+
